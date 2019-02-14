@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="Contact.css" type="text/css">
+</head>
+
+<body style="background-color: gray">
+	<div id="headder">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        &#9776;More
+        </span>
+		<a href="index.html" id="icon">
+            <img src="Home_icon_grey.png" id="icon"
+                alt="click me to go to the home page.">
+         </a>
+	</div>
+	<div class="navigation" id="navi">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="History.html">History</a>
+		<a href="MyFavourite.html">My Favoutie Edition</a>
+		<a href="AboutUs.html">About Us</a>
+		<a href="Contact.html">Contact Us</a>
+	</div>
+	<div id="banner"><img src="interested.jpg"width="1000px" height="480px" style="width:auto; height:auto;"></div>
+	<div id="main">
+		<div id="headder">
+		</div>
+		<form name="f1" onSubmit="print_result()">
+			<fieldset id="fieldset1">
+				<legend>Interesting?Join Us now!</legend>
+				<tr>
+					<td>Name:</td>
+					<td>
+						<input type="text" id="name" name="name" pattern="^[A-Z][a-z]*" title="Capital First charather" required />
+					</td>
+				</tr>
+				<br>
+				<tr>
+					<td>Email:</td>
+					<td>
+						<input type="email" id="email" name="email" required title="here is to input your email address" />
+					</td>
+				</tr>
+				<br>
+				<tr> 
+				<div>
+				<td>Gender:</td>
+					
+						<input type="radio" name="gender" value="Male"> Male
+						<input type="radio" name="gender" value="Female"> Female 
+					</div>
+
+				</tr>
+				<tr>
+					<td>Tel:</td>
+					<td>
+						<input type="text" id="tel" name="tel" required pattern=^[0-9]{13}*>
+					</td>
+				</tr>
+				<br>
+				<tr>
+					<td>Birth:</td>
+					<td>
+						<input type="date" id="date" name="DOB" required>
+					</td>
+				</tr>
+				<br>
+				<tr>
+					<fieldset id="fieldset2">
+						<legend>Comment:</legend>
+						<textarea name="cm" id="cm" cols="30" rows="10" id="textarea" onclick="cleanAll()" title="Try to text something here..."></textarea>
+					</fieldset>
+				</tr>
+				<br>
+				<input type="submit" id="submit" value="Submit" title="Here is to sumit your form" onclick="getValue()">
+				<input type="reset" id="reset" value=Reset title="Here is to reset the form">
+			</fieldset>
+		</form>
+	</div>
+	<button onclick="toTop()" id="toTop" title="Go to the top">Top</button>
+
+
+
+	<script>
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function openNav() {
+			document.getElementById("navi").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("navi").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+				document.getElementById("toTop").style.display = "block";
+			} else {
+				document.getElementById("toTop").style.display = "none";
+			}
+		}
+
+		function toTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+		function getValue() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			if(f1.gender[0].checked){
+				var gender="Male"
+			}else{
+				var gender="Female"
+			}
+			var tel = document.getElementById("tel").value;
+			var date = document.getElementById("date").value;
+			confirm("Name: " + name + "\nEmail: " + email + "\nGender: " + gender+ "\nTel: " + tel + "\nBirth: " + date);
+		}
+        function cleanAll(){
+            document.getElementById("textarea").value="";
+        }
+	</script>
+</body>
+
+</html>

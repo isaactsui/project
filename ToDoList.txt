@@ -1,0 +1,14 @@
+1. index
+	Hey Welcome to my WebSite
+	I am SiuBlueJai^^
+	This webSite is to share about my favourite car type
+	SUPRAAAAAA
+	Please read the line in the left head side^^
+	<--------------------------------------------
+2. history
+	https://en.wikipedia.org/wiki/Toyota_Supra
+3. G4 descrieption //G4,G2(2)
+/*4. extra about SUPRA
+5. Connect Us\
+*/
+movable mitercount;

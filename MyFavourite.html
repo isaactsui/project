@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyFavouriteEdition</title>
+	<link rel="stylesheet" href="MyFavourite.css" type="text/css">
+</head>
+
+<body style="background-color: gray">
+	<div id="headder">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="nav">&#9776; More</span>
+		<a href="index.html">
+            <img src="Home_icon_grey.png" id="icon"
+                alt="click me to go to the home page.">
+         </a>
+	</div>
+	<div class="navigation" id="navi">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="History.html">History</a>
+		<a href="MyFavourite.html">My Favoutie Edition</a>
+		<a href="AboutUs.html">About Us</a>
+		<a href="Contact.html">Contact Us</a>
+	</div>
+
+
+	<div id="main">
+		<table>
+			<div id="topic">
+			My Favourite Edition
+			</div>
+
+			<button onclick="toTop()" id="toTop" title="Go to the top">Top</button>
+
+
+			<div id="introduction" align="center" style="margin: auto;">
+				<p><b>My favoutrite edition is Toyota Castrol TOM'S SUPRA (JGTC) '00.
+	    It used JZA80(MKIV) for the base, Toyota turned it into a Race car.
+            They introduced a fresh air system used in their high tech rally cars in the World Rally Championship (WRC), and it also developed a cooling/water injection system to the 3S-G turbocharged inline-4, increasing both its power and fuel economy.</b></p>
+
+				<img src="G4(2).jpg" style="display:table-caption" ;>
+				<p><b>
+            ▲Toyota Castrol TOM'S SUPRA (JGTC) '00 in a Race.
+        </b></p>
+
+				<p><b>
+            The car appears as the #36 driven by Masanori Sekiya and Takeshi Tsuchiya, who achieved a 13th place overall in the 2000 JGTC season's GT500 class Driver's Championship. After this,  It appears in all Gran Turismo games since Gran Turismo 3: A-Spec, with the exception of Gran Turismo Sport.
+        </b></p>
+				<video autoplay loop id="video-background" muted plays-inline>
+  <source src="GranTurismo3.mp4" type="video/mp4">
+    </video>
+
+
+			</div>
+		</table>
+	</div>
+
+	<script>
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function openNav() {
+			document.getElementById("navi").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("navi").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+				document.getElementById("toTop").style.display = "block";
+			} else {
+				document.getElementById("toTop").style.display = "none";
+			}
+		}
+
+		function toTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>

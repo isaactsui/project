@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>PLAYERUNKNOWN'S BATTLEGROUNDS 絕地求生</title>
-
-<link rel="icon" href="banner/pubg.ico" type="pubg-icon" />
-<link rel="shortcut icon" href="banner/pubg.ico" type="pubg-icon" />
-
+    <meta charset="UTF-8">
+    <title>Welcome to my Home Page</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 
-<frameset rows="25%,7%,68%" cols="*" framespacing="0" frameborder="no" border="0">
-  <frame src="top.html" name="topFrame" scrolling="no" noresize="noresize" id="topFrame" title="topFrame" />
-  <frame src="menu.html" name="mainFrame" id="mainFrame" title="mainFrame" noresize="noresize"/>
-  <frame src="main.html" name="bottomFrame" scrolling="yes" noresize="noresize" id="bottomFrame" title="bottomFrame" />
-</frameset>
-<noframes><body>
-</body></noframes>
+<body>
+    <video autoplay loop id="index-background" muted plays-inline class="indexbg">
+    <source src="indexbackground.mp4" type="video/mp4">
+</video>
+    <div id="headder">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More
+		</span>
+        <a href="index.html" id="icon">
+            <img src="Home_icon_grey.png" id="icon"
+                alt="click me to go to the home page.">
+         </a>
+
+    </div>
+    <div class="navigation" id="navi">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="History.html">History</a>
+        <a href="MyFavourite.html">My Favoutie Edition</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+    </div>
+    <br>
+    <div id="main">
+        <img src="Supra-index.png" id="index-img">
+
+        <br>
+        <input type="button" onclick="location.href='History.html'" value="Start Now!" id="index-start">
+    </div>
+    
+    <button onclick="toTop()" id="toTop" title="Go to the top">Top</button>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function openNav() {
+            document.getElementById("navi").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("navi").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                document.getElementById("toTop").style.display = "block";
+            } else {
+                document.getElementById("toTop").style.display = "none";
+            }
+        }
+
+        function toTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
 </html>

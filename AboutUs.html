@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>About Us</title>
+	<link rel="stylesheet" href="AboutUs.css" type="text/css">
+	<div id="headder">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+			&#9776; More
+		</span>
+		<a href="index.html" id="icon">
+            <img src="Home_icon_grey.png" id="icon"
+                alt="click me to go to the home page.">
+         </a>
+	</div>
+	<img src="aboutusbanner.png" id="banner">
+</head>
+
+<body style="background-color: gray">
+	<div id="content" class="wrapper">
+		<table border="1" height="700px">
+			<tr>
+				<td width="50%">
+					<div class="dawae">Hi,my name is Law siu yin
+					<div class="uganda">
+					<img src="mlgsonic.jpg" width=70%>
+					</div>
+					</div>
+					<p>I love playing racing game since i was little, the game impressed me most is GranTurismo.When this game came out, Toyota supra is the theme car. When i saw this car, it become my dream car immediately.Also, it the reason i decided to make a website/webpage with this car too! Hope you guys like it! </p>
+
+					<p>
+						If you have any enquiry, please feel free to contact me at:
+					</p>
+
+					<p>
+						170313580@vtc.edu.hk
+					</p>
+				</td>
+				<td width="50%">
+					<p>Uganda Knuckles</p>
+					<div class="dawae">Do you know da wae?
+						<div class="uganda"><img src="UgandaKnuckles.jpg"></div>
+					</div>
+					<p>Do you know da wae to the pricenes?</p>
+					Ugandan Knuckles is the nickname given to a depiction of the character Knuckles from the Sonic franchise created by YouTuber Gregzilla, which is often used as an avatar by players in the multiplayer game VRChat who repeat phrases like “do you know the way” and memes associated with the country Uganda, most notably the film Who Killed Captain Alex? and Zulul. The character is associated with the expression “do you know the way”, which is typically spoken in a mock African accent and phonetically spelled as “do you know de wey.” Along with the question in hand a VR user will start making “spitting” sounds, followed by a “mob like” mentality. Unsuspecting VRchat users fall victim to Ugandan Knuckles “promise” of showing “de wey”. Only followed by a mass trolling.
+					If you want to find me, go find the
+					<div class="dawae">pirences <div class="uganda"><img src="priences.jpg"></div></div>
+
+					
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="navigation" id="navi">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="History.html">History</a>
+		<a href="MyFavourite.html">My Favoutie Edition</a>
+		<a href="AboutUs.html">About Us</a>
+		<a href="Contact.html">Contact Us</a>
+	</div>
+	<button onclick="toTop()" id="toTop" title="Go to the top">Top</button>
+
+	<script>
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function openNav() {
+			document.getElementById("navi").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("navi").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+				document.getElementById("toTop").style.display = "block";
+			} else {
+				document.getElementById("toTop").style.display = "none";
+			}
+		}
+
+		function toTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+
+</html>
