@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134502679-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134502679-1');
+</script>
+	<meta charset="UTF-8">
+	<title>The History</title>
+	<link rel="stylesheet" href="History.css" type="text/css">
+</head>
+
+<body style="background-color: blue">
+	<div id="headder">
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="nav">&#9776; More</span>
+		<a href="index.html">
+            <img src="Home_icon_grey.png" id="icon"
+                alt="click me to go to the home page.">
+         </a>
+	</div>
+
+	<div class="navigation" id="navi">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="History.html">History</a>
+		<a href="MyFavourite.html">My Favoutie Edition</a>
+		<a href="AboutUs.html">About Us</a>
+		<a href="Contact.html">Contact Us</a>
+	</div>
+	<div id="main">
+
+
+		<div id="topic">
+			<p align=center>The History of supra</p>
+		</div>
+
+		<div class="video-container">
+			<iframe width="1903" height="740" src="https://www.youtube.com/embed/VsztX4Hxrv4" frameborder="" allow="autoplay; encrypted-media" allowfullscreen>
+           </iframe>
+		</div>
+
+		<div id="body">
+			The Toyota Supra is a sports car/grand tourer that was produced by Toyota Motor Corporation from 1978 to 2002. The styling of the Supra was derived from the Toyota Celica, but it was both longer and wider. Starting in mid-1986, the A70 Supra became a separate model from the Celica. In turn, Toyota also stopped using the prefix Celica and began just calling the car Supra. Owing to the similarity and past of the Celica's name, it is frequently mistaken for the Supra, and vice versa. First, second, and third generation Supras were assembled at Tahara plant in Tahara, Aichi while the fourth generation Supra was assembled at the Motomachi plant in Toyota City.
+		</div>
+		<br>
+		<div id="body">
+			The Supra has appeared in numerous video games, movies, music videos and TV shows. Some of the most notable appearances include the Gran Turismo, Forza Motorsport, Need for Speed, Midnight Club, and Forza Horizon video games and The Fast and the Furious film series.
+		</div>
+
+		<div align=c enter id="G4">
+			<img src="G4.jpg" width="640px" height="345px" style="display:table-caption; margin:auto;">
+		</div>
+
+		<div id="body2">
+			▲A supra that appearance in the movie "Fast and the Furious" film series.
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div id="sub">
+			<img src="troll.png" style="display:table-caption; margin:auto";>
+		</div>
+		<div id="body">
+
+			<a href="http://blog.toyota.co.uk/history-of-the-toyota-supra"><img src="history.png" id="history-logo"></a>
+			
+			<a href="https://en.wikipedia.org/wiki/Toyota_Supra" title="Click Me its wiki page." >
+			<img src="Wikipedia-Logo.jpg" id="wiki-logo"></a>
+		</div>
+
+	</div>
+	<button onclick="toTop()" id="toTop" title="Go to the top">Top</button>
+
+
+	<script>
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function openNav() {
+			document.getElementById("navi").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("navi").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+		}
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+				document.getElementById("toTop").style.display = "block";
+			} else {
+				document.getElementById("toTop").style.display = "none";
+			}
+		}
+
+		function toTop() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+
+</html>
